@@ -352,8 +352,8 @@ def parse_opt():
 
 def main(opt):
     check_requirements(ROOT / 'requirements.txt', exclude=('tensorboard', 'thop'))
-    # run(**vars(opt))
-    onnx_infer()
+    run(**vars(opt))
+    # onnx_infer()
 
 if __name__ == '__main__':
     opt = parse_opt()
